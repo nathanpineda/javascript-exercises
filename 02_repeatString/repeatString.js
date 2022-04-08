@@ -1,10 +1,15 @@
 const repeatString = function(string, num) {
     let stringWord = '';
+    let numCheck = Math.sign(num);
 
-    for (let i = 0; i < num; i++) {
-        stringWord += string;
-        }
-    return stringWord;
+    if (numCheck === -1) {
+        return stringWord += 'ERROR';
+    } else if (numCheck !== -1) {
+        for (let i = 0; i < num; i++) {
+            stringWord += string;
+            }
+        return stringWord;
+    }
 };
 
 // Do not edit below this line

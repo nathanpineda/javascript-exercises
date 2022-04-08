@@ -4,7 +4,7 @@ const repeatString = function(string, num) {
 
     if (numCheck === -1) {
         return stringWord += 'ERROR';
-    } else if (numCheck !== -1) {
+    } else {
         for (let i = 0; i < num; i++) {
             stringWord += string;
             }

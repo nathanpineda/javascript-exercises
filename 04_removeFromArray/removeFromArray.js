@@ -1,5 +1,6 @@
-const removeFromArray = function(array, num = 0, removeElement = 1) {
+const removeFromArray = function(array, num = 0) {
     const list = array;
+    let removeElement = 1;
     list.splice(num - 1, removeElement);
     return list;
 };

@@ -1,9 +1,10 @@
 const repeatString = function(string, num) {
-    let stringWord = string;
+    let stringWord = '';
 
-    for (let i = num; i >= 0; i--) {
-        return stringWord.concat(string);
+    for (let i = 0; i < num; i++) {
+        stringWord += string;
         }
+    return stringWord;
 };
 
 // Do not edit below this line

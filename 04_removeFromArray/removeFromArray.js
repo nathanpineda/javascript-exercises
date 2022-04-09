@@ -1,12 +1,14 @@
-const removeFromArray = function(array, numOne = 0, numTwo = 0) {
+const removeFromArray = function(array, numOne = 0, numTwo) {
     const list = array;
-    
     let removeElement = 1;
 
-    list.splice(numOne - 1, removeElement);
-    
+    if (numTwo) {
     list.splice(numTwo - 1, removeElement);
-
+    } else if (numOne > 0) {
+    list.splice(numOne - 1, removeElement);
+    } else {
+        console.log('Error');
+    }
     return list;
 };
 

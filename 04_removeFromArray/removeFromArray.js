@@ -1,4 +1,4 @@
-const removeFromArray = function(array, element) {
+const removeFromArray = function(array, ...element) {
     const list = array;
     let elementIndex = list.indexOf(element);
     

@@ -3,8 +3,13 @@ const removeFromArray = function(array, element) {
     let elementIndex = list.indexOf(element);
     
     if (elementIndex > -1) {
-    list.splice(elementIndex, 1);
-    } 
+        list.splice(elementIndex, 1);
+    }
+
+    if (argument[2]) {
+        let argumentTwo = list.indexOf(argument[2]);
+        list.splice(argumentTwo, 2);
+    }
     return list;
 };
 

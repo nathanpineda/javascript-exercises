@@ -1,7 +1,7 @@
 const removeFromArray = function(array, ...args) {
     const list = array;
     const argArray = args;
-    const combinedListArgs = [array, args]
+    const combinedListArgs = [array, args];
     const newList = [];
     
     for (let i = 0; i < list.length; i++) {
@@ -11,7 +11,7 @@ const removeFromArray = function(array, ...args) {
     }
     
     console.log(combinedListArgs);
-    
+
     return newList;
 };
 

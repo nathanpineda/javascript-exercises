@@ -4,9 +4,7 @@ const removeFromArray = function(array, ...args) {
     const newList = [];
     
     for (let i = 0; i < list.length; i++) {
-        if (list[i] === argArray[0]) {
-            list.slice(i);
-        } else {
+        if (list[i] !== argArray[0]) {
             newList.push(list[i]);
         }
     }

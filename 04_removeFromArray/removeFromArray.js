@@ -1,14 +1,17 @@
 const removeFromArray = function(array, ...args) {
     const list = array;
     const argArray = args;
+    const newList = [];
     
     for (let i = 0; i < list.length; i++) {
         if (list[i] === argArray[0]) {
             list.slice(i);
-        } 
+        } else {
+            newList.push(list[i]);
+        }
     }
 
-    return list;
+    return newList;
 };
 
 // Do not edit below this line

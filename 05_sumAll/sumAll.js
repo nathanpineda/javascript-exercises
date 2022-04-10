@@ -5,7 +5,7 @@ const sumAll = function(firstInt, secondInt) {
 
     if (Math.sign(first) === -1 || Math.sign(second) === -1) {
         sum = "ERROR";
-    }   else if (typeof first === 'string' || typeof second === 'string') {
+    }   else if (typeof first !== 'number' || typeof second !== 'number') {
         sum = "ERROR";
     }   else if (first < second) {
             for (let i = firstInt; i <= secondInt; i++) {

@@ -3,7 +3,11 @@ const sumAll = function(firstInt, secondInt) {
     first = firstInt;
     second = secondInt;
 
-    if (first < second) {
+    if (Math.sign(first) === -1 || Math.sign(second) === -1) {
+        sum = "ERROR";
+    }   else if (typeof first === 'string' || typeof second === 'string') {
+        sum = "ERROR";
+    }   else if (first < second) {
             for (let i = firstInt; i <= secondInt; i++) {
                 sum += i;
         } 
@@ -11,11 +15,7 @@ const sumAll = function(firstInt, secondInt) {
             for (let i = firstInt; i >= secondInt; i--) {
                 sum += i;
         }
-     }  else if (typeof first === 'number' || typeof second !== 'number') {
-            sum = "ERROR";
-        } else if (Math.sign(first) === -1 || Math.sign(second) === -1) {
-            sum = "ERROR";
-        } else {
+        }  else {
             console.log("ERROR");
     }
 

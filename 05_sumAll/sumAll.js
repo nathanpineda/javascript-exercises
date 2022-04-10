@@ -3,8 +3,14 @@ const sumAll = function(firstInt, secondInt) {
     first = firstInt;
     second = secondInt;
 
-    for (let i = firstInt; i <= secondInt; i++) {
-        sum += i;
+    if (first < second) {
+        for (let i = firstInt; i <= secondInt; i++) {
+            sum += i;
+        } 
+    }   else {
+        for (let i = firstInt; i >= secondInt; i--) {
+            sum += i;
+        }
     }
 
     return sum;

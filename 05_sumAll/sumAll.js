@@ -11,9 +11,9 @@ const sumAll = function(firstInt, secondInt) {
             for (let i = firstInt; i >= secondInt; i--) {
                 sum += i;
         }
-     }  else if (typeof first === 'string' || typeof second !== 'string') {
+     }  else if (typeof first === 'number' || typeof second !== 'number') {
             sum = "ERROR";
-        } else if (first.Math.sign() === -1 || second.Math.sign() === -1) {
+        } else if (Math.sign(first) === -1 || Math.sign(second) === -1) {
             sum = "ERROR";
         } else {
             console.log("ERROR");

@@ -11,7 +11,12 @@ const ftoc = function(fahrenheit) {
 
 const ctof = function(celsius) {
   let conversion = (celsius * 9/5) + 32;
-  return conversion.toFixed(1);
+  
+  if(conversion % 1 !== 0) {
+    return Math.round(conversion * 1e1) / 1e1;
+  }
+
+  return conversion;
 };
 
 // Do not edit below this line

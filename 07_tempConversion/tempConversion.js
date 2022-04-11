@@ -2,9 +2,9 @@ const ftoc = function(fahrenheit) {
   let conversion = (fahrenheit - 32) * 5/9;
 
   if(conversion % 1 !== 0) {
-    conversion.toFixed(1);
+    return Math.round(conversion * 1e1) / 1e1;
   }
-  
+
   return conversion;
 
 };

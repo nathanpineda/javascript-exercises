@@ -1,6 +1,11 @@
 const ftoc = function(fahrenheit) {
   let conversion = (fahrenheit - 32) * 5/9;
-  return conversion.toFixed(1);
+
+  if(conversion % 1 !== 0) {
+    conversion.toFixed(1);
+  }
+  
+  return conversion;
 
 };
 

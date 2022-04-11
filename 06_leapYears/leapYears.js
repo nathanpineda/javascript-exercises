@@ -11,6 +11,8 @@ const leapYears = function(year) {
     } else {
         isLeapYear = true;
     }
+
+    return isLeapYear;
 };
 
 // Do not edit below this line
